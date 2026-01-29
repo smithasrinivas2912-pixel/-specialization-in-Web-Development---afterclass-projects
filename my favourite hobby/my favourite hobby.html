@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event handling</title>
+</head>
+
+<body>
+    <h1>ASHRITH 4'A'</h1>
+    <h3>MY FAVOURITE HOBBY!!!</h3>
+    <p id="sentence">I wanted to find my friend, and he was hiding in the basement.</p>
+    <button onclick="dark()">Get into the mood</button>
+
+    <br>
+    <br>
+    <audio id="sound" src="scary-scream-401725.mp3" type="audio/mp3"></audio>
+    <button onclick="screem()">Dont click me</button>
+    <br>
+    <br>
+    <button onclick="changeText()">Tell me what happen..!!!</button>
+    <script>
+        function dark() {
+            document.body.style.backgroundColor = "black";
+            document.body.style.color = "red"
+        }
+        function screem() {
+
+            document.getElementById("sound").play();
+
+        }
+        function changeText() {
+
+            document.getElementById("sentence").innerHTML = "So I carefully searched the damp dungeon.There you are!";
+
+        }
+    </script>
+</body>
+
+</html>
